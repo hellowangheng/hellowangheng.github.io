@@ -16,9 +16,9 @@
   
   
   
-    <meta name="description" content="你好,这是我写的第一篇文章，我很高兴。之前我一直在csdn上面写博客，但由于一些原因，我决定抛弃它。用过博客园之后也不喜欢。于是今天我在这里搭建一个属于自己的博客。希望自己在这篇净土里，可以更好记录自己在学习上面学到的点点滴滴。同时感谢那些支持开源的人们。">
+    <meta name="description" content="Ian Fellows与2014-06-13公布了wordcloud包，之前我用wordcloud包写了一篇关于文本可视化的博客。这里就不再多说了。就在今年2016-07-25，Dawei Lang发布了wordcloud2，它是wordcloud的一个升级版。不信咱们就看看。我们可以用这个包画出个性化词云图。这个包里面包含了两个数据集，demoFreqC和demoFreq，前者是一些中文数...">
   
-  <title>first hexo essay [ 王亨的博客 ]</title>
+  <title>R语言绘制个性化词云 [ 王亨的博客 ]</title>
   
   
     <link rel="shortcut icon" href="/favicon.ico">
@@ -37,22 +37,13 @@
 <body>
 <div class="side-navigate hide-area">
   
-    <div class="item prev">
-      <a href="/2017/06/04/R语言绘制个性化词云/">
-        <div class="item-icon"></div>
-      </a>
-      <div class="item-title">
-        R语言绘制个性化词云
-      </div>
-    </div>
-  
   
     <div class="item next">
-      <a href="/2017/06/04/hello-world/">
+      <a href="/2017/06/04/first-hexo-essay/">
         <div class="item-icon"></div>
       </a>
       <div class="item-title">
-        Hello World
+        first hexo essay
       </div>
     </div>
   
@@ -127,17 +118,40 @@
       
       
   <article id="post">
-    <h1>first hexo essay</h1>
+    <h1>R语言绘制个性化词云</h1>
     <p class="page-title-sub">
       <span id = "post-title-date">Created at 2017-06-04</span>
       
         <span id = "post-title-updated">Updated at 2017-06-04</span>
       
       
+      <span id = "post-title-categories">Category
+      
+      
+        
+        
+        <a href="/categories/可视化/">可视化</a>
+      
+      </span>
+      
+      
+      <span id = "post-title-tags">
+      Tag
+      
+      
+        
+        
+        <a href="/tags/R语言/">R语言</a>
+      
+      </span>
       
     </p>
     
-    <p>你好,这是我写的第一篇文章，我很高兴。之前我一直在<a href="http://blog.csdn.net/wzgl__wh" target="_blank" rel="external">csdn</a>上面写博客，但由于一些原因，我决定抛弃它。用过<a href="http://www.cnblogs.com/wheng/" target="_blank" rel="external">博客园</a>之后也不喜欢。于是今天我在这里搭建一个属于自己的博客。希望自己在这篇净土里，可以更好记录自己在学习上面学到的点点滴滴。同时感谢那些支持开源的人们。</p>
+    <p>Ian Fellows与2014-06-13公布了wordcloud包，之前我用wordcloud包写了一篇关于文本可视化的博客。这里就不再多说了。就在今年2016-07-25，Dawei Lang发布了wordcloud2，它是wordcloud的一个升级版。不信咱们就看看。我们可以用这个包画出个性化词云图。<br>这个包里面包含了两个数据集，demoFreqC和demoFreq，前者是一些中文数据，后者是一些英文数据。这两个数据都包含了两个变量，一个是文本，另一个是文本的数量。大家可以使用str()函数来查看数据的详细信息。这个表主要有两个函数letterCloud和wordcloud2。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">wordcloud2(data, size = 1, minSize = 0, gridSize = 0, </div><div class="line"> fontFamily = &apos;Segoe UI&apos;, fontWeight = &apos;bold&apos;, </div><div class="line"> color = &apos;random-dark&apos;, backgroundColor = &quot;white&quot;, </div><div class="line"> minRotation = -pi/4, maxRotation = pi/4, shuffle = TRUE,</div><div class="line"> rotateRatio = 0.4, shape = &apos;circle&apos;,</div><div class="line"> ellipticity = 0.65, widgetsize = NULL, figPath = NULL, hoverFunction = NULL)</div></pre></td></tr></table></figure>
+<pre><code>hello worrld
+</code></pre><p><code><br>hello world!<br></code></p>
+<p><img src="/2017/06/04/R语言绘制个性化词云/first.png" ,alt="first" ,="" width="600" height="300"></p>
 
   </article>
   <div class="random-toc-area">
@@ -152,13 +166,11 @@
   
 <nav id="pagination">
   
-    <a href="/2017/06/04/R语言绘制个性化词云/" class="prev">&larr; Prev post R语言绘制个性化词云</a>
-  
 
   
 
   
-    <a href="/2017/06/04/hello-world/" class="next">Next post Hello World &rarr;</a>
+    <a href="/2017/06/04/first-hexo-essay/" class="next">Next post first hexo essay &rarr;</a>
   
 </nav>
 
